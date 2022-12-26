@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.full{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.ig-right{
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ig-right{
+    width: 100vw;
+    height: 100vh;
+}
+
+.ig-right-top{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ig-right-bot{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ig-top-center{
+    width: 73%;
+    height: 78%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.ig-bot-center{
+    width: 73%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgb(222, 222, 222);
+}
+
+.avatar{
+    width: 150px;
+    height: 150px;
+    margin: 0 70px;
+}
+
+.avatar:hover{
+    cursor: pointer;
+}
+
+.avatarPic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.infor{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 35px;
+}
+
+.line-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line-1 span{
+    display: flex;
+    align-items: center;
+}
+
+.account{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.editProfile{
+    width: 100px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+}
+
+.editProfile:hover{
+    background-color: #DBDBDB;
+    cursor: pointer;
+}
+
+.setting{
+    width: 20px;
+    height: 20px;
+}
+
+.setting svg{
+    width: 20px;
+    height: 20px;
+}
+
+.setting svg{
+    cursor: pointer;
+}
+
+.line-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.line2-left, .line2-mid, .line2-bot{
+    display: flex;
+
+}
+
+.line2-mid:hover, .line2-bot:hover{
+    cursor: pointer;
+}
+
+.numberPosts, .numberFollowing, .numberFollowers{
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.line-3{
+    font-weight: 500;
+}
+
+.menu-feed{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.post-feed, .reels-feed, .saved-feed{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 16%;
+    padding: 15px 0;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+}
+
+.posts, .reelss, .saved, .tagged{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+.tagged-feed{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 18%;
+    padding: 15px 0;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+}
+
+.post-feed img{
+    width: 10px;
+    height: 10px;
+    opacity: 100%;
+}
+
+.reels-feed img{
+    width: 10px;
+    height: 10px;
+    opacity: 60%;
+}
+
+
+.saved-feed img{
+    width: 10px;
+    height: 10px;
+    opacity: 60%;
+}
+
+
+.tagged-feed img{
+    width: 10px;
+    height: 10px;
+    opacity: 60%;
+}

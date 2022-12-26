@@ -1,0 +1,10 @@
+.feedPic1, .noel1{
+    width: 293px;
+    height: 293px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.feedPic1{
+    position: relative;
+}

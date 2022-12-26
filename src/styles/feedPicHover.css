@@ -1,0 +1,32 @@
+.feedPicHover{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.HoverMid{
+    width: 293px;
+    height: 293px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart{
+    display: flex;
+}
+
+.heart h3{
+    color: white;
+    margin-left: 10px;
+}
+
+.comment{
+    display: flex;
+    margin-left: 20px;
+}
+
+.comment h3{
+    color: white;
+    margin-left: 10px;
+}
