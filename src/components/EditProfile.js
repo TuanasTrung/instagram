@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/EP.scss';
 
-const EditProfile = (props) => {
+const EditProfile = ({handleSubmitForm,handleCancel, ...props}) => {
+
+  const [inputState, setInputState] = useState(props.userNameFromParent);
+
+  const handleChangeInput =(e) => {
+    setInputState(e.target.value);
+    console.log(inputState)
+  }
+
   return (
     <div className="edit">
       <div className='formEdit'>
@@ -79,7 +87,7 @@ const EditProfile = (props) => {
             <div className='formFill'>
               <div className='formName'>Username</div>
               <div className='formTitleRight'>
-                <input className='formInputName' value={props.userNameFromParent}></input>
+                <input className='formInputName' value={inputState} onChange={handleChangeInput} ></input>
                 <div className='formNote'>
                   <div style={{ marginBottom: '8px' }}>
                     In most cases, you'll be able to change your username back to tuanastrung for another 14 days.
@@ -89,11 +97,11 @@ const EditProfile = (props) => {
               </div>
             </div>
             <div className='formFill'>
-              <div className='formName'>Website</div>
+              <div className='formNameWeb'>Website</div>
               <div className='formTitleRight'>
-                <input className='formInputWeb' style={{ cursor: 'wait' }} disabled='true' placeholder='Website'></input>
-                <div className='formNote'>
-                  <div style={{ marginBottom: '25px' }}>
+                <input className='formInputName' style={{ cursor: 'wait', backgroundColor: '#EFEFEF' }} disabled='true' placeholder='Website'></input>
+                <div className='formNoteWeb'>
+                  <div style={{ marginBottom: '15px' }}>
                     Editing your links is only available on mobile. Visit the Instagram app and edit your profile to change the websites in your bio.                  </div>
                 </div>
               </div>
@@ -109,63 +117,53 @@ const EditProfile = (props) => {
               </div>
             </div>
             <div className='formFill'>
-              <div className='formName'>Name</div>
-              <div className='formTitleRight'>
-                <input className='formInputName' style={{ cursor: 'wait' }} disabled='true' placeholder='Website'></input>
-                <div className='formNote'>
-                  <div style={{ marginBottom: '25px' }}>
-                    Editing your links is only available on mobile. Visit the Instagram app and edit your profile to change the websites in your bio.                  </div>
+              <div className='formNameWeb'></div>
+              <div className='formTitleRight' style={{ justifyContent: 'center' }}>
+                <div className='formNoteWeb'>
+                  <div style={{ fontWeight: '500', fontSize: '14px' }}>
+                    Personal information
+                  </div>
+                  <div>
+                    Provide your personal information, even if the account is used for a business, a pet or something else. This won't be a part of your public profile.                  </div>
                 </div>
               </div>
             </div>
             <div className='formFill'>
-              <div className='formName'>Email</div>
+              <div className='formEmail'>Email</div>
               <div className='formTitleRight'>
-                <input className='formInputName' style={{ cursor: 'wait' }} disabled='true' placeholder='Website'></input>
-                <div className='formNote'>
-                  <div style={{ marginBottom: '25px' }}>
-                    Editing your links is only available on mobile. Visit the Instagram app and edit your profile to change the websites in your bio.                  </div>
+                <input className='formInputName' value={'le_trung16701@yahoo.com'}></input>
+              </div>
+            </div>
+            <div className='formFill'>
+              <div className='formEmail'>Phone number</div>
+              <div className='formTitleRight'>
+                <input className='formInputName' value={'+84 98 695 88 42'}></input>
+              </div>
+            </div>
+            <div className='formFill'>
+              <div className='formEmail'>Gender</div>
+              <div className='formTitleRight'>
+                <input className='formInputGender' value={'Male'}></input>
+              </div>
+            </div>
+            <div className='formFill'>
+              <div className='formEmail'>Similar account suggestions</div>
+              <div className='formTitleRightC'>
+                <input className='checkBox' type={'checkbox'}></input>
+                <div className='checkNote'>
+                  <div>
+                    Include your account when recommending similar accounts people might want to follow.
+                    <a> [?]</a>
+                  </div>
                 </div>
               </div>
             </div>
             <div className='formFill'>
-              <div className='formName'>Phone number</div>
-              <div className='formTitleRight'>
-                <input className='formInputName' style={{ cursor: 'wait' }} disabled='true' placeholder='Website'></input>
-                <div className='formNote'>
-                  <div style={{ marginBottom: '25px' }}>
-                    Editing your links is only available on mobile. Visit the Instagram app and edit your profile to change the websites in your bio.                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='formFill'>
-              <div className='formName'>Gender</div>
-              <div className='formTitleRight'>
-                <input className='formInputName' style={{ cursor: 'wait' }} disabled='true' placeholder='Website'></input>
-                <div className='formNote'>
-                  <div style={{ marginBottom: '25px' }}>
-                    Editing your links is only available on mobile. Visit the Instagram app and edit your profile to change the websites in your bio.                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='formFill'>
-              <div className='formName'>Similar account suggestions</div>
-              <div className='formTitleRight'>
-                <input className='formInputName' style={{ cursor: 'wait' }} disabled='true' placeholder='Website'></input>
-                <div className='formNote'>
-                  <div style={{ marginBottom: '25px' }}>
-                    Editing your links is only available on mobile. Visit the Instagram app and edit your profile to change the websites in your bio.                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='formFill'>
-              <div className='formName'>Name</div>
-              <div className='formTitleRight'>
-                <input className='formInputName' style={{ cursor: 'wait' }} disabled='true' placeholder='Website'></input>
-                <div className='formNote'>
-                  <div style={{ marginBottom: '25px' }}>
-                    Editing your links is only available on mobile. Visit the Instagram app and edit your profile to change the websites in your bio.                  </div>
-                </div>
+              <div className='formSubmit'></div>
+              <div className='formTitleRightS'>
+                <button className='btnSubmit' onClick={() => handleSubmitForm(inputState)}>Submit</button>
+                <button className='btnSubmit' style={{backgroundColor: 'red', marginLeft: '30px'}} onClick={() => handleCancel()}>Cancel</button>
+                <div className='temporarily'>Temporarily deactivate my account</div>
               </div>
             </div>
           </div>

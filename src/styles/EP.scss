@@ -39,6 +39,7 @@
 .listEdit li{
     list-style: none;
     height: 52px;
+    width: 236px;
     padding-left: 28px;
     display: flex;
     align-items: center;
@@ -136,6 +137,15 @@
     justify-content: space-between;
 }
 
+.formTitleRightC{
+    display: flex;
+}
+
+.formTitleRightS{
+    display: flex;
+    margin-top: 32px ;
+}
+
 .formInputName{
     height: 32px;
     width: 355px;
@@ -159,7 +169,31 @@
     margin-bottom: 8px;
 }
 
+.formNoteWeb{
+    color: #8E8E8E;
+    font-size: 12px;
+    width: 353px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .formNote a{
+    color: rgb(0, 149, 256);
+}
+
+.checkNote{
+    width: 245px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.checkNote a{
     color: rgb(0, 149, 256);
 }
 
@@ -171,7 +205,30 @@
     font-weight: 500;
 }
 
-.formInputName{
+.formNameWeb{
+    height: 94px;
+    width: 178px;
+    text-align: right;
+    padding-right: 30px;
+    font-weight: 500;
+}
+
+.formEmail{
+    height: 50px;
+    width: 178px;
+    text-align: right;
+    padding-right: 30px;
+    font-weight: 500;
+}
+
+.formSubmit{
+    width: 178px;
+    text-align: right;
+    padding-right: 30px;
+    font-weight: 500;
+}
+
+.formInputGender{
     height: 32px;
     width: 355px;
     border-radius: 3px;
@@ -181,4 +238,44 @@
     font-weight: 100;
     letter-spacing: 1px;
     box-sizing: border-box;
+}
+
+.formInputGender:hover{
+    border: 1px solid #EDEDED;
+    background-color: #FFFFFF;
+    color: #A6A6A6;
+}
+
+.checkBox{
+    width: 16px;
+    border: 1px solid rgba(219, 219, 219);
+    margin: 0 3px;
+}
+
+.btnSubmit{
+    height: 32px;
+    width: 77.35px;
+    background-color: #0095F6;
+    color: white;
+    font-weight: 600;
+    font-size: 13.5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btnSubmit:hover{
+    background-color: #1877F2;
+}
+
+.temporarily{
+    font-size: 14px;
+    font-weight: 500;
+    color: #0095F6;
+    cursor: pointer;
+    margin-left: 90px;
+}
+
+.temporarily:hover{
+    color: #00376B;
 }
