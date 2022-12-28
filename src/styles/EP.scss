@@ -1,0 +1,184 @@
+.edit{
+    width: 84vw;
+    margin-left:1px;
+    background-color: #FAFAFA;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formEdit{
+    background-color: white;
+    width: 935px;
+    height: 934px;
+    margin: 30px 0;
+    border: 1px solid rgb(222, 222, 222);
+    display: flex;
+    border: 1px solid rgba(219, 219, 219);
+    border-radius: 3px;
+}
+
+.formEdit-left{
+    width: 237px;
+    height: 932px;
+    border-right: 1px solid rgb(222, 222, 222);
+}
+
+.formEdit-lefttop{
+    height: 744px;
+    width: 237px;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.listEdit{
+    width: 100%;
+    height: 676px;
+}
+
+.listEdit li{
+    list-style: none;
+    height: 52px;
+    padding-left: 28px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.listEdit li:hover{
+    background-color: #FAFAFA;
+    border-left: 2px solid #DBDBDB;
+}
+
+.meta{
+    width: 60px;
+    cursor: pointer;
+}
+
+.switchAcc{
+    width: 100%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0095F6;
+    cursor: pointer;
+}
+
+.switchAcc:hover{
+    color: #00376B;
+}
+
+.formEdit-leftbot{
+    padding-left: 28px;
+    padding-right: 17.5px;
+    margin: 24.5px 0;
+}
+
+.accCenter{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0095F6;
+    margin: 7px 0;
+    cursor: pointer;
+}
+
+.meta-des{
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+.formEdit-right{
+    width: 696px;
+    height: 932px;
+}
+
+.formEdit-profile{
+    margin: 32px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.formEdit-ava{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-left: 110px;
+    margin-right: 30px;
+}
+
+.userChangeName{
+    font-size: 14px;
+    font-weight: 500;
+    color: #0095F6;
+    cursor: pointer;
+}
+
+.userChangeName:hover{
+    color: #00376B;
+}
+
+.formEdit-fill{
+    width: 696px;
+    height: 810px;
+    margin: 16px 0;
+}
+
+.formFill{
+    display: flex;
+}
+
+.formTitleRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formInputName{
+    height: 32px;
+    width: 355px;
+    border-radius: 3px;
+    border: 1px solid rgba(219, 219, 219);
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.formNote{
+    color: #8E8E8E;
+    font-size: 12px;
+    width: 353px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.formNote a{
+    color: rgb(0, 149, 256);
+}
+
+.formName{
+    height: 104px;
+    width: 178px;
+    text-align: right;
+    padding-right: 30px;
+    font-weight: 500;
+}
+
+.formInputName{
+    height: 32px;
+    width: 355px;
+    border-radius: 3px;
+    border: 1px solid rgba(219, 219, 219);
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}

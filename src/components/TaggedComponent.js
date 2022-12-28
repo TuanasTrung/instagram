@@ -1,5 +1,5 @@
 import TaggedPic from './TaggedPic';
-import '../styles/feed.css';
+import '../styles/feed.scss';
 import pic4 from '../images/feed4.png';
 import pic5 from '../images/feed5.png';
 import pic6 from '../images/feed6.png';

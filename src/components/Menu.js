@@ -1,4 +1,4 @@
-import '../styles/menu.css';
+import '../styles/menu.scss';
 import React, {useState} from 'react';
 import logo from '../images/logo-ig.png';
 import homeIcon from '../images/home-ig.png';

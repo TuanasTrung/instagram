@@ -11,13 +11,16 @@
 }
 
 .container{
-    width: 19%;
+    width: 16vw;
     height: 100vh;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-right: 1px solid rgb(222, 222, 222);
+    position: fixed;
+    left: 0;
 }
 
 .menu{

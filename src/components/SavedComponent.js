@@ -1,4 +1,4 @@
-import '../styles/reels.css'
+import '../styles/reels.scss'
 
 const SavedComponent = () => {
     return (

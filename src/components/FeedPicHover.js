@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../styles/feedPicHover.css';
+import '../styles/feedPicHover.scss';
 
-const FeedPicHover = ({onMouseE, onMouseL, ...props}) => {
+const FeedPicHover = () => {
 
     return (
         <div className='feedPicHover'>

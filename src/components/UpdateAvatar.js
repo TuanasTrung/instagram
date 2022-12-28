@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import '../styles/updateAvatar.css'
+import React, { useState } from 'react';
+import '../styles/updateAvatar.scss'
 
 const UpdateAvatar = ({ onCancel, onLink, ...props }) => {
 
@@ -12,12 +12,12 @@ const UpdateAvatar = ({ onCancel, onLink, ...props }) => {
                     <span>Change Profile Photo</span>
                 </div>
                 <div className='link'>
-                    <input placeholder='Gắn đường dẫn link vào đây' value={linkState} onChange={e=>setLinkState(e.target.value)} />
+                    <input placeholder='Gắn đường dẫn link vào đây' value={linkState} onChange={e => setLinkState(e.target.value)} />
                 </div>
-                <div className='btn-update' onClick={()=>onLink(linkState)}>
+                <div className='btn-update' onClick={() => onLink(linkState)}>
                     <span>Upload Photo</span>
                 </div>
-                <div className='btn-cancel' onClick={()=>onCancel()}>
+                <div className='btn-cancel' onClick={() => onCancel()}>
                     <span>Cancel</span>
                 </div>
             </div>
