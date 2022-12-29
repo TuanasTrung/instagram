@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import '../styles/EP.scss';
 
-const EditProfile = ({handleSubmitForm,handleCancel, ...props}) => {
+const EditProfile = ({ handleSubmitForm, handleCancel, ...props }) => {
+
+  const navigate = useNavigate({});
 
   const [inputState, setInputState] = useState(props.userNameFromParent);
 
-  const handleChangeInput =(e) => {
+  const handleChangeInput = (e) => {
     setInputState(e.target.value);
     console.log(inputState)
   }
@@ -99,7 +102,7 @@ const EditProfile = ({handleSubmitForm,handleCancel, ...props}) => {
             <div className='formFill'>
               <div className='formNameWeb'>Website</div>
               <div className='formTitleRight'>
-                <input className='formInputName' style={{ cursor: 'wait', backgroundColor: '#EFEFEF' }} disabled='true' placeholder='Website'></input>
+                <input className='formInputName' style={{ cursor: 'not-allowed', backgroundColor: '#EFEFEF' }} disabled='true' placeholder='Website'></input>
                 <div className='formNoteWeb'>
                   <div style={{ marginBottom: '15px' }}>
                     Editing your links is only available on mobile. Visit the Instagram app and edit your profile to change the websites in your bio.                  </div>
@@ -161,8 +164,8 @@ const EditProfile = ({handleSubmitForm,handleCancel, ...props}) => {
             <div className='formFill'>
               <div className='formSubmit'></div>
               <div className='formTitleRightS'>
-                <button className='btnSubmit' onClick={() => handleSubmitForm(inputState)}>Submit</button>
-                <button className='btnSubmit' style={{backgroundColor: 'red', marginLeft: '30px'}} onClick={() => handleCancel()}>Cancel</button>
+                <button className='btnSubmit' onClick={() => { handleSubmitForm(inputState); navigate("/") }}>Submit</button>
+                <button className='btnSubmit' style={{ backgroundColor: 'red', marginLeft: '30px' }} onClick={() => { navigate("/") }}>Cancel</button>
                 <div className='temporarily'>Temporarily deactivate my account</div>
               </div>
             </div>
